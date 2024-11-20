@@ -1,0 +1,33 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dxclusive.ClassPage"
+             BackgroundColor="White">
+
+    <!-- Background Gradient -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#FED974" Offset="0.0" />
+            <GradientStop Color="#F66D3C" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <VerticalStackLayout Padding="20,50,20,10" Spacing="10">
+
+        <!-- Title CLASS -->
+        <Label Text="Term"
+               FontSize="32"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               TextColor="#872121" />
+
+        <!-- Dynamic Buttons Placeholder -->
+        <ScrollView>
+            <VerticalStackLayout x:Name="ButtonsContainer"
+                                 Spacing="10"
+                                 Padding="0,20,0,0">
+                <!-- Buttons will be added here dynamically -->
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>
